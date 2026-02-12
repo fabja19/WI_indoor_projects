@@ -1,0 +1,232 @@
+Format type:keyword version: 1.1.0
+begin_<project> seminar_room
+project_id 14440
+begin_<globals> 
+longitude 0
+latitude 0
+end_<globals>
+FirstAvailableFeatureNumber FIRSTAVAILABLEFEATURENUMBER
+FirstAvailableUnknownLayoutNumber 0
+FirstAvailableStudyAreaNumber 8
+FirstAvailableAntennaNumber 2
+FirstAvailableWaveformNumber 1
+begin_<caches> 
+begin_<cache> 
+type X3DGeometry
+feature -1
+filename ./seminar_room_project.X3DGeometry.cache
+valid false
+end_<cache>
+end_<caches>
+begin_<studyarea> x3d6_6_1
+StudyAreaNumber 1
+active
+begin_<partitioning> 
+partitioning_type disabled
+queuing_type local
+num_partitions 2
+num_ranks 2
+extra_queue_options 
+end_<partitioning>
+begin_<apg_acceleration> 
+enabled yes
+workflow_mode full
+binary_output_mode per_path_utm
+binary_rate 0 active
+database_mode write
+path_depth 25
+adjacency_distance 0.5
+end_<apg_acceleration>
+begin_<diffuse_scattering> 
+enabled no
+diffuse_reflections 2
+diffuse_diffractions 1
+diffuse_transmissions 0
+final_interaction_only yes
+spatial_resolution 2
+end_<diffuse_scattering>
+autoboundary 1
+begin_<model> 
+x3d
+num_threads 24
+pressure PRESSURE
+temperature TEMPERATURE
+humidity HUMIDITY
+initial_ray_mode uniform_sweep
+foliage_model 2
+foliage_attenuation 1
+mobility_platform_time_interval 1
+plane_wave_phase_reference automatic
+3.40003 4.70006 1.38
+max_reflections 6
+max_transmissions 6
+max_wedge_diffractions 1
+begin_<OutputRequests> 
+CEF no
+ComplexImpulseResponse yes
+DelaySpread no
+DirectionOfArrival yes
+DirectionOfDeparture yes
+ElectroMagneticFields no
+FSPathloss no
+FSPower no
+MeanDirectionOfArrival no
+MeanDirectionOfDeparture no
+MeanTimeOfArrival no
+Pathloss yes
+Paths yes
+Power no
+TimeOfArrival no
+XPathloss no
+end_<OutputRequests>
+end_<model>
+begin_<boundary> 
+begin_<reference> 
+cartesian
+longitude 0
+latitude 0
+visible no
+terrain
+end_<reference>
+zmin -0.25
+zmax 3.00999999046326
+nVertices 4
+-0.354999996721745 -0.25 0
+7.05006074905396 -0.25 0
+7.05006074905396 9.65011978149414 0
+-0.354999996721745 9.65011978149414 0
+end_<boundary>
+begin_<MonteCarlo> 
+monte_carlo_updated no
+monte_carlo_active no
+monte_carlo_iterations 10
+monte_carlo_seed 1
+end_<MonteCarlo>
+begin_<MPE> 
+mpe_is_active inactive
+mpestandard controlled
+mpe_averaging_time 300
+mpe_averaging_time_short 0.1
+mpe_user_efield_peak 100000
+mpe_user_efield_rms 61.4
+mpe_user_hfield_rms 0.163
+mpe_user_power_short 10
+mpe_user_power 2
+end_<MPE>
+end_<studyarea>
+FEATURES_HERE
+begin_<txrx_sets> 
+filename ./txrx_file.txrx
+FirstAvailableTxRxNumber FIRSTAVAILABLETXRXNUMBER
+end_<txrx_sets>
+FirstAvailableCommSystemNumber 0
+begin_<antenna> omni
+antenna 0
+type omnidirectional
+waveform 0
+polarization vertical
+power_threshold -250
+cable_loss 0
+VSWR 1
+component TotalGain
+gain_range 40
+show_arrow no
+is_sphere no
+eplane_hpbw 90
+eplane_fnbw 180
+end_<antenna>
+begin_<Waveform> Sinusoid
+Sinusoid
+waveform 0
+begin_<FrequencySweep> 
+SweepType StartEndCount
+StartValue 5720.000
+Increment 10000.000
+Count 50
+EndValue 5920.000
+end_<FrequencySweep>
+CarrierFrequency 5820000000.000
+phase 0.000
+bandwidth 20000000.000
+end_<Waveform>
+FirstAvailableFilterNumber 0
+begin_<requests> 
+cartesian
+sealevel
+local
+CalculationMode New
+MaxRenderedPaths 25
+FieldAnimationIncrement 10
+FieldAnimationTimeAveraged yes
+CEF no
+ComplexImpulseResponse yes
+DelaySpread no
+FieldAnimation no
+DirectionOfArrival yes
+DirectionOfDeparture yes
+ElectricFieldVsFrequency no
+ElectricFieldVsTime no
+EMFields no
+FSPathloss no
+FSPower no
+InputData no
+MeanDirectionOfArrival no
+MeanDirectionOfDeparture no
+MeanTimeOfArrival no
+Pathloss yes
+Paths yes
+Power no
+PowerDelayProfile no
+TimeOfArrival no
+XPathloss no
+TerrainProfile no
+end_<requests>
+begin_<Scales> 
+begin_<MpeThreshhold> 
+AutoScaling 0
+DrawValues 0
+AutoUpdating 0
+Discrete 1
+UseGlobalOpacity 1
+ManualValuesSet 1
+ClampedHigh 1
+ClampedLow 1
+Alpha 1.000e+00
+ManualMin 0.000e+00
+ManualMax 2.000e+02
+TextColor 1.000 1.000 1.000
+Colors 4
+0.300 0.000 0.500
+0.000 1.000 0.000
+1.000 1.000 0.000
+1.000 0.000 0.000
+PartitionValues 
+3
+0.001 50.000 100.000 
+end_<MpeThreshhold>
+begin_<Special1> 
+AutoScaling 1
+DrawValues 0
+AutoUpdating 1
+Discrete 0
+UseGlobalOpacity 0
+ManualValuesSet 0
+ClampedHigh 1
+ClampedLow 1
+Alpha 8.000e-01
+ManualMin 0.000e+00
+ManualMax 0.000e+00
+TextColor 1.000 1.000 1.000
+Colors 6
+0.300 0.000 0.500
+0.000 0.000 1.000
+0.000 1.000 0.000
+1.000 1.000 0.000
+1.000 0.500 0.000
+1.000 0.000 0.000
+PartitionValues 
+5
+1.000e-28 1.000e-28 1.000e-28 1.000e-28 1.000e-28 
+end_<Special1>
+end_<Scales>
+end_<project>

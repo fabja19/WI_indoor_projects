@@ -1,0 +1,534 @@
+Format type:keyword version: 1.1.0
+begin_<project> seminar_room
+project_id 14440
+begin_<globals> 
+longitude 0
+latitude 0
+end_<globals>
+FirstAvailableFeatureNumber 114
+FirstAvailableUnknownLayoutNumber 0
+FirstAvailableStudyAreaNumber 8
+FirstAvailableAntennaNumber 2
+FirstAvailableWaveformNumber 1
+begin_<caches> 
+begin_<cache> 
+type X3DGeometry
+feature -1
+filename ./seminar_room_project.X3DGeometry.cache
+valid false
+end_<cache>
+end_<caches>
+begin_<studyarea> x3d6_6_1
+StudyAreaNumber 1
+active
+begin_<partitioning> 
+partitioning_type disabled
+queuing_type local
+num_partitions 2
+num_ranks 2
+extra_queue_options 
+end_<partitioning>
+begin_<apg_acceleration> 
+enabled yes
+workflow_mode full
+binary_output_mode per_path_utm
+binary_rate 0 active
+database_mode write
+path_depth 25
+adjacency_distance 0.5
+end_<apg_acceleration>
+begin_<diffuse_scattering> 
+enabled no
+diffuse_reflections 2
+diffuse_diffractions 1
+diffuse_transmissions 0
+final_interaction_only yes
+spatial_resolution 2
+end_<diffuse_scattering>
+autoboundary 1
+begin_<model> 
+x3d
+num_threads 24
+initial_ray_mode uniform_sweep
+foliage_model 2
+foliage_attenuation 1
+mobility_platform_time_interval 1
+plane_wave_phase_reference automatic
+3.40003 4.70006 1.38
+max_reflections 6
+max_transmissions 6
+max_wedge_diffractions 1
+begin_<OutputRequests> 
+CEF no
+ComplexImpulseResponse yes
+DelaySpread no
+DirectionOfArrival yes
+DirectionOfDeparture yes
+ElectroMagneticFields no
+FSPathloss no
+FSPower no
+MeanDirectionOfArrival no
+MeanDirectionOfDeparture no
+MeanTimeOfArrival no
+Pathloss yes
+Paths yes
+Power no
+TimeOfArrival no
+XPathloss no
+end_<OutputRequests>
+end_<model>
+begin_<boundary> 
+begin_<reference> 
+cartesian
+longitude 0
+latitude 0
+visible no
+terrain
+end_<reference>
+zmin -0.25
+zmax 3.00999999046326
+nVertices 4
+-0.354999996721745 -0.25 0
+7.05006074905396 -0.25 0
+7.05006074905396 9.65011978149414 0
+-0.354999996721745 9.65011978149414 0
+end_<boundary>
+begin_<MonteCarlo> 
+monte_carlo_updated no
+monte_carlo_active no
+monte_carlo_iterations 10
+monte_carlo_seed 1
+end_<MonteCarlo>
+begin_<MPE> 
+mpe_is_active inactive
+mpestandard controlled
+mpe_averaging_time 300
+mpe_averaging_time_short 0.1
+mpe_user_efield_peak 100000
+mpe_user_efield_rms 61.4
+mpe_user_hfield_rms 0.163
+mpe_user_power_short 10
+mpe_user_power 2
+end_<MPE>
+end_<studyarea>
+begin_<feature> 
+feature 3
+floorplan
+active
+filename ./seminar_room_door_win.flp
+end_<feature>
+begin_<feature> 
+feature 4
+object
+active
+filename ./cabinet.object
+end_<feature>
+begin_<feature> 
+feature 5
+object
+active
+filename ./blackboard.object
+end_<feature>
+begin_<feature> 
+feature 6
+object
+active
+filename ./whiteboard.object
+end_<feature>
+begin_<feature> 
+feature 8
+object
+active
+filename ./table_surface11.object
+end_<feature>
+begin_<feature> 
+feature 9
+object
+active
+filename ./table_surface12.object
+end_<feature>
+begin_<feature> 
+feature 10
+object
+active
+filename ./table_surface13.object
+end_<feature>
+begin_<feature> 
+feature 12
+object
+active
+filename ./table_surface21.object
+end_<feature>
+begin_<feature> 
+feature 13
+object
+active
+filename ./table_surface31.object
+end_<feature>
+begin_<feature> 
+feature 14
+object
+active
+filename ./table_surface41.object
+end_<feature>
+begin_<feature> 
+feature 15
+object
+active
+filename ./table_surface22.object
+end_<feature>
+begin_<feature> 
+feature 16
+object
+active
+filename ./table_surface32.object
+end_<feature>
+begin_<feature> 
+feature 17
+object
+active
+filename ./table_surface42.object
+end_<feature>
+begin_<feature> 
+feature 18
+object
+active
+filename ./table_surface23.object
+end_<feature>
+begin_<feature> 
+feature 19
+object
+active
+filename ./table_surface33.object
+end_<feature>
+begin_<feature> 
+feature 20
+object
+active
+filename ./table_surface43.object
+end_<feature>
+begin_<feature> 
+feature 21
+object
+active
+filename ./table_small.object
+end_<feature>
+begin_<feature> 
+feature 22
+object
+active
+filename ./lamp1.object
+end_<feature>
+begin_<feature> 
+feature 23
+object
+active
+filename ./lamp2.object
+end_<feature>
+begin_<feature> 
+feature 24
+object
+active
+filename ./lamp3.object
+end_<feature>
+begin_<feature> 
+feature 49
+object
+active
+filename ./chair0.object
+end_<feature>
+begin_<feature> 
+feature 78
+object
+active
+filename ./radiator1.object
+end_<feature>
+begin_<feature> 
+feature 79
+object
+active
+filename ./radiator2.object
+end_<feature>
+begin_<feature> 
+feature 80
+object
+active
+filename ./radiator3.object
+end_<feature>
+begin_<feature> 
+feature 81
+object
+active
+filename ./radiator4.object
+end_<feature>
+begin_<feature> 
+feature 82
+object
+active
+filename ./radiator5.object
+end_<feature>
+begin_<feature> 
+feature 83
+object
+active
+filename ./cables.object
+end_<feature>
+begin_<feature> 
+feature 85
+object
+active
+filename ./chair41_legs.object
+end_<feature>
+begin_<feature> 
+feature 86
+object
+active
+filename ./chair43_legs.object
+end_<feature>
+begin_<feature> 
+feature 87
+object
+active
+filename ./chair44_legs.object
+end_<feature>
+begin_<feature> 
+feature 88
+object
+active
+filename ./chair45_legs.object
+end_<feature>
+begin_<feature> 
+feature 89
+object
+active
+filename ./chair46_legs.object
+end_<feature>
+begin_<feature> 
+feature 90
+object
+active
+filename ./chair31_legs.object
+end_<feature>
+begin_<feature> 
+feature 91
+object
+active
+filename ./chair32_legs.object
+end_<feature>
+begin_<feature> 
+feature 92
+object
+active
+filename ./chair33_legs.object
+end_<feature>
+begin_<feature> 
+feature 93
+object
+active
+filename ./chair34_legs.object
+end_<feature>
+begin_<feature> 
+feature 94
+object
+active
+filename ./chair21_legs.object
+end_<feature>
+begin_<feature> 
+feature 95
+object
+active
+filename ./chair22_legs.object
+end_<feature>
+begin_<feature> 
+feature 96
+object
+active
+filename ./chair23_legs.object
+end_<feature>
+begin_<feature> 
+feature 97
+object
+active
+filename ./chair24_legs.object
+end_<feature>
+begin_<feature> 
+feature 98
+object
+active
+filename ./chair25_legs.object
+end_<feature>
+begin_<feature> 
+feature 99
+object
+active
+filename ./chair11_legs.object
+end_<feature>
+begin_<feature> 
+feature 101
+object
+active
+filename ./chair13_legs.object
+end_<feature>
+begin_<feature> 
+feature 102
+object
+active
+filename ./chair14_legs.object
+end_<feature>
+begin_<feature> 
+feature 103
+object
+active
+filename ./chair15_legs.object
+end_<feature>
+begin_<feature> 
+feature 108
+object
+active
+filename ./chair16_legs.object
+end_<feature>
+begin_<feature> 
+feature 109
+object
+active
+filename ./chair26_legs.object
+end_<feature>
+begin_<feature> 
+feature 110
+object
+active
+filename ./chair35_legs.object
+end_<feature>
+begin_<feature> 
+feature 111
+object
+active
+filename ./chair36_legs.object
+end_<feature>
+begin_<feature> 
+feature 112
+object
+active
+filename ./chair12_legs.object
+end_<feature>
+begin_<feature> 
+feature 113
+object
+active
+filename ./chair42_legs.object
+end_<feature>
+begin_<txrx_sets> 
+filename ./seminar_room_project.txrx
+FirstAvailableTxRxNumber 38
+end_<txrx_sets>
+FirstAvailableCommSystemNumber 0
+begin_<antenna> omni
+antenna 0
+type omnidirectional
+waveform 0
+polarization vertical
+power_threshold -250
+cable_loss 0
+VSWR 1
+component TotalGain
+gain_range 40
+show_arrow no
+is_sphere no
+eplane_hpbw 90
+eplane_fnbw 180
+end_<antenna>
+begin_<Waveform> Sinusoid
+Sinusoid
+waveform 0
+begin_<FrequencySweep> 
+SweepType StartEndCount
+StartValue 5720.000
+Increment 10000.000
+Count 50
+EndValue 5920.000
+end_<FrequencySweep>
+CarrierFrequency 5820000000.000
+phase 0.000
+bandwidth 20000000.000
+end_<Waveform>
+FirstAvailableFilterNumber 0
+begin_<requests> 
+cartesian
+sealevel
+local
+CalculationMode New
+MaxRenderedPaths 25
+FieldAnimationIncrement 10
+FieldAnimationTimeAveraged yes
+CEF no
+ComplexImpulseResponse yes
+DelaySpread no
+FieldAnimation no
+DirectionOfArrival yes
+DirectionOfDeparture yes
+ElectricFieldVsFrequency no
+ElectricFieldVsTime no
+EMFields no
+FSPathloss no
+FSPower no
+InputData no
+MeanDirectionOfArrival no
+MeanDirectionOfDeparture no
+MeanTimeOfArrival no
+Pathloss yes
+Paths yes
+Power no
+PowerDelayProfile no
+TimeOfArrival no
+XPathloss no
+TerrainProfile no
+end_<requests>
+begin_<Scales> 
+begin_<MpeThreshhold> 
+AutoScaling 0
+DrawValues 0
+AutoUpdating 0
+Discrete 1
+UseGlobalOpacity 1
+ManualValuesSet 1
+ClampedHigh 1
+ClampedLow 1
+Alpha 1.000e+00
+ManualMin 0.000e+00
+ManualMax 2.000e+02
+TextColor 1.000 1.000 1.000
+Colors 4
+0.300 0.000 0.500
+0.000 1.000 0.000
+1.000 1.000 0.000
+1.000 0.000 0.000
+PartitionValues 
+3
+0.001 50.000 100.000 
+end_<MpeThreshhold>
+begin_<Special1> 
+AutoScaling 1
+DrawValues 0
+AutoUpdating 1
+Discrete 0
+UseGlobalOpacity 0
+ManualValuesSet 0
+ClampedHigh 1
+ClampedLow 1
+Alpha 8.000e-01
+ManualMin 0.000e+00
+ManualMax 0.000e+00
+TextColor 1.000 1.000 1.000
+Colors 6
+0.300 0.000 0.500
+0.000 0.000 1.000
+0.000 1.000 0.000
+1.000 1.000 0.000
+1.000 0.500 0.000
+1.000 0.000 0.000
+PartitionValues 
+5
+1.000e-28 1.000e-28 1.000e-28 1.000e-28 1.000e-28 
+end_<Special1>
+end_<Scales>
+end_<project>

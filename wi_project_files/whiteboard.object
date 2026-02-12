@@ -1,0 +1,100 @@
+Format type:keyword version: 1.1.0
+begin_<object> whiteboard
+begin_<reference> 
+cartesian
+longitude 0.000000000000000
+latitude 0.000000000000000
+visible no
+sealevel
+end_<reference>
+begin_<Material> wood
+Material 1
+LayeredDielectric
+begin_<Color> 
+ambient 0.730000 0.380000 0.170000 1.000000
+diffuse 0.730000 0.380000 0.170000 1.000000
+specular 0.730000 0.380000 0.170000 1.000000
+emission 0.000000 0.000000 0.000000 0.000000
+shininess 10.000000
+end_<Color>
+diffuse_scattering_model none
+fields_diffusively_scattered 0.043000
+cross_polarized_power 0.400000
+directive_alpha 4
+directive_beta 4
+directive_lambda 0.750000
+subdivide_facets yes
+reflection_coefficient_options do_not_use
+nLayers 1
+begin_<DielectricLayer> 
+conductivity 2.638e-02
+permittivity 1.990000
+roughness 0.000e+00
+thickness 3.000e-02
+end_<DielectricLayer>
+end_<Material>
+begin_<structure_group> 
+begin_<structure> 
+begin_<sub_structure> 
+begin_<face> 
+Material 1
+nVertices 4
+0.2741991977 2.1257071595 1.9500000477
+0.3241915348 2.1265797790 1.9500000477
+0.3241915348 2.1265797790 0.9499999881
+0.2741991977 2.1257071595 0.9499999881
+end_<face>
+begin_<face> 
+Material 1
+nVertices 4
+0.3091039887 0.1260130207 1.9500000477
+0.2741991977 2.1257071595 1.9500000477
+0.2741991977 2.1257071595 0.9499999881
+0.3091039887 0.1260130207 0.9499999881
+end_<face>
+begin_<face> 
+Material 1
+nVertices 4
+0.3590963259 0.1268856402 1.9500000477
+0.3091039887 0.1260130207 1.9500000477
+0.3091039887 0.1260130207 0.9499999881
+0.3590963259 0.1268856402 0.9499999881
+end_<face>
+begin_<face> 
+Material 1
+nVertices 4
+0.3241915348 2.1265797790 1.9500000477
+0.3590963259 0.1268856402 1.9500000477
+0.3590963259 0.1268856402 0.9499999881
+0.3241915348 2.1265797790 0.9499999881
+end_<face>
+begin_<face> 
+Material 1
+nVertices 4
+0.2741991977 2.1257071595 1.9500000477
+0.3091039887 0.1260130207 1.9500000477
+0.3590963259 0.1268856402 1.9500000477
+0.3241915348 2.1265797790 1.9500000477
+end_<face>
+begin_<face> 
+Material 1
+nVertices 4
+0.3241915348 2.1265797790 0.9500000477
+0.3590963259 0.1268856402 0.9500000477
+0.3091039887 0.1260130207 0.9500000477
+0.2741991977 2.1257071595 0.9500000477
+end_<face>
+end_<sub_structure>
+end_<structure>
+end_<structure_group>
+begin_<ControlVectors> 
+CVsVisible no
+Stippled yes
+CVsThickness 3
+CVxLength 10.0000000000
+CVyLength 10.0000000000
+CVzLength 10.0000000000
+CVsXaxis 1.0000000000 0.0000000000 0.0000000000
+CVsZaxis 0.0000000000 0.0000000000 1.0000000000
+end_<ControlVectors>
+end_<object>

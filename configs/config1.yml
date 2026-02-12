@@ -1,0 +1,152 @@
+# for fixed parameters, give one value
+---
+floorplan:
+  z_min: 0
+  z_max: 2.76 
+  side_length: [5.0, 9.6]
+  cutoff_length: [0.1, 0.8]
+  cutoff_chance: 0.5
+  material: concrete
+  material_walls: [drywall, concrete] 
+  wall_objects:
+    cabinet:
+      number: [0, 2]
+      z_min: 0
+      z_max: [1, 2.76]
+      side_length: [1, 7]
+      depth: [0.4, 1]
+      material: wood
+    radiator:
+      number: [3, 5]
+      z_min: [0, 0.5]
+      z_max: [1, 1.5]
+      side_length: [1, 2]
+      depth: [0.1, 0.3]
+      material: [metal, metal_pec]
+    cable_tunnel:
+      number: [0, 4]
+      z_min: [0.5, 0.8]
+      z_max: [0.7, 1]
+      side_length: [1, 5]
+      depth: [0.1, 0.3]
+      material: [metal, metal_pec]
+    blackboard:
+      number: [0, 1]
+      z_min: [0.5, 1]
+      z_max: [1.5, 2.5]
+      side_length: [2, 3]
+      depth: [0.1, 0.3]
+      material: wood
+    door:
+      number: 1
+      z_min: 0
+      z_max: 2
+      side_length: 1
+      material: wood
+    window:
+      number: [2, 10]
+      side_length: [0.4, 1.5]
+      z_min: 1.1
+      z_max: 2.53
+      material: glass
+      frame:
+        chance: 0.5
+        material: [metal, metal_pec]
+        side_length: [0.05, 0.15]
+    metal_plate:
+      randomize_individually: true
+      number: [3, 15]
+      side_length: [0.05, 0.5]
+      z_min: [0, 1.5]
+      z_max: [1, 2.76]
+      material: [metal, metal_pec]
+#### objects loaded from files
+objects:
+  table_chair_group:
+    number: [2, 8]
+    where: floor
+  chair:
+    number: [2, 8]
+    where: floor
+  table_small:
+    number: [0, 2]
+    where: floor
+  table_big: 
+    number: [0, 5]
+    where: floor
+  lamp:
+    number: [2, 4]
+    where: ceiling
+  whiteboard:
+    number: [1, 2]
+    where: floor
+### parameters here are estimated from different sources, see README
+materials:
+  drywall:
+    material_type: LayeredDielectric
+    nLayers: 3
+    DielectricLayer0: 
+      conductivity: [0.01, 0.05]
+      permittivity: [2.0, 3.0]
+      roughness: 0.000e+00
+      thickness: [0.01, 0.1]
+    DielectricLayer1: # free space between the layers
+      conductivity: 0.000e+00
+      permittivity: 1.000000
+      roughness: 0.000e+00
+      thickness: [0.01, 0.1]
+    DielectricLayer2:
+      conductivity: [0.01, 0.05]
+      permittivity: [2.0, 3.0]
+      roughness: 0.000e+00
+      thickness: [0.01, 0.1]
+  wood:
+    material_type: LayeredDielectric
+    nLayers: 1
+    DielectricLayer:
+      conductivity: [0.002, 0.8]
+      permittivity: [1.0, 5.0]
+      roughness: 0.0
+      thickness: [1.0e-2, 5.0e-2]
+  metal_pec:
+    thickness: 0
+    roughness: 0
+    material_type: PEC
+  metal:
+    material_type: LayeredDielectric
+    nLayers: 1
+    DielectricLayer:
+      conductivity: [1.3e+06, 6.0e+07]
+      permittivity: 1
+      roughness: 0.0
+      thickness: [0.005, 0.05]
+  glass:
+    material_type: LayeredDielectric
+    nLayers: 1
+    DielectricLayer:
+      conductivity: [0.01, 0.03]
+      permittivity: [4.0, 7.0]
+      roughness: 0.000e+00
+      thickness: [0.005, 0.01]
+  concrete:
+    material_type: LayeredDielectric
+    nLayers: 1
+    DielectricLayer:
+      conductivity: [0.1, 0.6]
+      permittivity: [4.9, 9.0]
+      roughness: 0.000e+00
+      thickness: [0.2, 0.5]
+  freespace:
+    conductivity: 0
+    permittivity: 1
+    thickness: 0
+rx:
+  height: 1
+  spacing: 0.3
+tx:
+  z_min: [0.5, 2.5]
+  number: 5
+project_properties:
+  pressure: [950, 1050]
+  humidity: [20, 80]
+  temperature: [15, 30]
