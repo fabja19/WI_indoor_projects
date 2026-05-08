@@ -2,7 +2,7 @@
 
 This repo allows to generate Wireless InSite (WI) projects that model realistic indoor room environments in an automated manner. By creating a large number of different projects and running RT simulations, we obtain a dataset that can be used to train CNN on indoor RM prediction. The code contains functions to read and write WI compatible files for some of the logic implemented by WI.
 
-The dataset we used for our paper ... is available on ... We might ask you to generate the .xml files yourself, is they are too large.
+The dataset we used for our paper "Radio Map Prediction from Noisy Environment Information and Sparse Observations" ([https://arxiv.org/abs/2602.11950](https://arxiv.org/abs/2602.11950) is available on [https://zenodo.org/records/18631406](https://zenodo.org/records/18631406).
 
 A WI (indoor) project is in general defined by:  
 
@@ -12,10 +12,8 @@ A WI (indoor) project is in general defined by:
 
 These files are usually generated through the GUI, but we can also use scripts to e.g. copy an *.object* file, change some location or material parameters and add a reference to the altered file in the setup file.
 
-In order to run a large number of simulations, we will have to start them from the shell instead of the GUI.
-In this case, some of the files mentioned above (*.setup*, *.txrx*) actually become obsolete, instead we will need a *.xml* file containing all their information.
-Unfortunately, there is no documentation for these *.xml* files and they are quite complex.
-Our best bet is therefore to first define a baseline setup in the GUI, which will automatically create a corresponding template *.xml* file, and then alter only parameters like the employed objects and Tx/Rx locations in the *.xml* file.
+In order to run a large number of simulations, it is necessary to start them from the shell instead of the GUI.
+In this case, some of the files mentioned above (*.setup*, *.txrx*) actually become obsolete, instead a *.xml* file containing all their information is needed.
 
 # File/Folder Structure
 - [modules](modules) contains the code
